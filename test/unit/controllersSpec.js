@@ -92,10 +92,10 @@ describe('PhoneCat controllers', function() {
 
 
     it('should fetch phone detail', function() {
-      expect(scope.phone).toBeUndefined();
+      expect(scope.phone).toEqualData({});
       $httpBackend.flush();
 
-      expect(scope.phone).toEqual(xyzPhoneData());
+      expect(scope.phone).toEqualData(xyzPhoneData());
     });
   });
 });

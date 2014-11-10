@@ -69,4 +69,8 @@ describe('PhoneCat controllers', function() {
       expect(scope.phone).toEqualData(xyzPhoneData());
     });
   });
+
+
+  describe('PhoneDetailCtrl', function(){
+  });
 });

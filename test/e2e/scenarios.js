@@ -97,5 +97,15 @@ describe('PhoneCat App', function() {
       element(by.css('.phone-thumbs li:nth-child(1) img')).click();
       expect(element(by.css('img.phone.active')).getAttribute('src')).toMatch(/img\/phones\/nexus-s.0.jpg/);
     });
+
+
+    it('should render phone specific links', function() {
+      var query = element(by.model('query'));
+      query.sendKeys('nexus');
+      element(by.css('.phones li a')).click();
+      browser.getLocationAbsUrl().then(function(url) {
+        expect(url.split('#')[1]).toBe('/phones/nexus-s');
+      });
+    });
   });
 });

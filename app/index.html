@@ -22,6 +22,9 @@
 
   <div class="view-container">
     <div ng-view class="view-frame"></div>
+          <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
+            <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+            <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
   </div>
 
 </body>

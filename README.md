@@ -157,6 +157,13 @@ large version of the thumbnail image.
   - Animate changes to the phone list, adding, removing and reordering phones.
   - Animate changes to the main phone image in the detail view.
 
+### step-13
+
+-Add back end connectivity
+  - Add proxy call to the http-server
+  - Modify services to call backend instead of json files
+  - Add user logic
+  - Add phone imput code
 
 ## Development with angular-phonecat
 
